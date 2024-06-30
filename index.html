@@ -3,40 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PERSONAL PORTFOLIO PAGE</title>
+    <title>Personal Portfolio Page</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
+        <div class="hero">
+            <h1>Renduchintala Srivalli</h1>
+            <p>Welcome to my personal portfolio</p>
+        </div>
         <nav>
             <ul>
-                <li><a href="#about">About Me</a></li>
+                <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section id="about">
-            <h1>About Me</h1>
-            <p>Your bio goes here.</p>
-        </section>
-        <section id="projects">
-            <h1>Projects</h1>
-            <p>Your projects go here.</p>
-        </section>
-        <section id="skills">
-            <h1>Skills</h1>
-            <p>Your skills go here.</p>
-        </section>
-        <section id="contact">
-            <h1>Contact</h1>
-            <p>Your contact info goes here.</p>
-        </section>
-    </main>
+    <section id="about">
+        <h2>About Me</h2>
+	<p>
+Hello! I'm Renduchintala Srivalli, a 3rd-year Information Technology student at Shri Vishnu Engineering College for Women in Bhimavaram, Andhra Pradesh. My academic journey has provided me with a solid foundation in web development. I have gained practical experience in creating responsive web applications using HTML, CSS, JavaScript, and React.js. Through coursework and personal projects, I have honed my skills in building intuitive and user-friendly web interfaces.</p>
+
+<p>I'm passionate about crafting engaging digital experiences that combine aesthetics with functionality. My background in Bhimavaram has instilled in me a strong work ethic, adaptability, and a collaborative mindset. I am eager to apply my technical skills and creativity to innovative projects and contribute to the forward-thinking team at AspireNex...</p>
+    </section>
+   <section id="projects">
+  <h2>Projects</h2>
+  <ol>
+    <li>
+      <h3>Hospital Management System (Python Full Stack)</h3>
+      <ul>
+        <li>Developed a comprehensive hospital management system using Python, Django, HTML, CSS, and JavaScript.</li>
+        <li>Designed and implemented database schemas, user interfaces, and backend functionalities to streamline patient management, appointment scheduling, and inventory control.</li>
+        <li>Implemented security features and data validation protocols to ensure robustness and reliability of the system.</li>
+      </ul>
+    </li>
+  </ol>
+</section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul class="skills-list">
+            <li>HTML/CSS</li>
+            <li>JavaScript (JS)</li>
+            <li>Programming language - Java, Python, C</li>
+	    <li>Tools - React.js, Node.js </li>
+	    <li>Data Base Management</li>
+        </ul>
+    </section>
+    <section id="contact">
+        <h2>Contact Information</h2>
+        <p>Email: srivallirenduchintala2005gmail.com</p>
+        <p>Phone: +91 8328357509</p>
+    </section>
     <footer>
-        <p>&copy; 2024 Your Name</p>
+        <p>&copy; 2024 Renduchintala Srivalli. All rights reserved.</p>
     </footer>
+    <script>
+        // Smooth scrolling for navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
+
